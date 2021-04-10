@@ -66,7 +66,7 @@ module.exports = () => {
 		await page.click("#botonConfirmar")
 		await pendingXHR.waitForAllXhrFinished();
 
-		await page.screenshot({ path: Date.now + ".jpg" });
+		await page.screenshot({ path: "evidencia.jpg" });
 		await browser.close();
 	})();
 };
