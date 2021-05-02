@@ -39,7 +39,7 @@ Environment=PATH=/bin:/usr/bin:/usr/local/bin
 5. Create linux service and enable it so it starts on boot:
   ```
   mkdir -p  ~/.config/systemd/user/
-  cp <path to the project folder> ~/.config/systemd/user/
+  cp <path to the project folder>auto-agenda-biblioteca.service ~/.config/systemd/user/
   systemctl --user daemon-reload
   systemctl --user enable --now auto-agenda-biblioteca.service
   ```
