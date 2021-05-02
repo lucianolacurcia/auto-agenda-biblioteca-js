@@ -1,0 +1,13 @@
+[Unit]
+Description=Bot para agendarse automaticamente en la biblioteca de la fing.
+Documentation=https://lucianolacurcia.github.io
+After=network.target
+
+[Service]
+WorkingDirectory=<path to the repositorie just clonned
+ExecStart=node <path to the repositorie just clonned>/main.js
+Restart=on-failure
+Environment=PATH=/bin:/usr/bin:/usr/local/bin
+
+[Install]
+WantedBy=multi-user.target
