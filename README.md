@@ -9,9 +9,19 @@ Few times I forgot to do it and then I decided to automate the tedious process s
 I deployed the program as a linux service on my rapberry pi but you can do it on any linux computer.
 ### Installation:
 
-The process consists of three parts:
-1. Clone the repository.
-2. Install dependencies.
-3. Create linux service and enable it so it starts on boot.
+1. Clone the repository:
+  ```
+  git clone https://github.com/lucianolacurcia/auto-agenda-biblioteca-js.git
+  ```
+2. Install dependencies:
+  ```
+  npm install
+  ```
+3. Change name of datos.example.json to datos.json and fulfill the fields with your personal data that will be used to register on the biblioteca's page.
+4. Create linux service and enable it so it starts on boot:
+  ```
+  mkdir -p  ~/.config/systemd/user/
+  
+  ```
 
 ## TODO
